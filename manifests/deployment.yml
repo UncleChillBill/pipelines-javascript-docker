@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: unclechillbillpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: unclechillbillpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: unclechillbillpipelinesjavascriptdocker 
+          image: ppcontainerregistry.azurecr.io/unclechillbillpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
